@@ -1,3 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@layer utilities {
+
+  .clip-happy-peoples{
+    clip-path: polygon(4% 0, 31% 16%, 100% 11%, 85% 100%, 16% 86%, 20% 65%, 0 39%);
+  }
+
+}
