@@ -8,5 +8,8 @@
   .clip-happy-peoples{
     clip-path: polygon(4% 0, 31% 16%, 100% 11%, 85% 100%, 16% 86%, 20% 65%, 0 39%);
   }
+  .clip-parallelogram {
+    clip-path: polygon(0 0, 85% 0, 100% 100%, 15% 100%);
+  }
 
 }

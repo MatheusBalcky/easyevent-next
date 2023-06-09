@@ -7,6 +7,7 @@ module.exports = {
         "light-green": "#26CC88",
         "yellow-title": "#FFFD47",
         roxo: "#C516FF",
+        "dark-purple": "#8E21B2",
       },
       keyframes: {
         wiggle: {
@@ -50,6 +51,24 @@ module.exports = {
         "swing-in-top-fwd-rotate": "rotate,swing-in-top-fwd 3s cubic-bezier(0.175, 0.885, 0.320, 1.275) both",
         "fade-in": "fade-in 1s linear",
         "pulse-fast": "pulse-fast 1s linear infinite",
+      },
+      screens: {
+        sm: "640px",
+        // => @media (min-width: 640px) { ... }
+
+        md: "768px",
+        // => @media (min-width: 768px) { ... }
+
+        "md-2": "815px",
+
+        lg: "1024px",
+        // => @media (min-width: 1024px) { ... }
+
+        xl: "1280px",
+        // => @media (min-width: 1280px) { ... }
+
+        "2xl": "1536px",
+        // => @media (min-width: 1536px) { ... }
       },
     },
   },
