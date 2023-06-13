@@ -3,15 +3,20 @@ import { MdEventAvailable } from "react-icons/md";
 import { AiFillInstagram, AiFillTwitterCircle } from "react-icons/ai";
 import happypeoples from "../../public/happy-people-pexels.jpg";
 import Image from "next/image";
+import Link from "next/link";
 
 const EczarFont = Eczar({ subsets: ["latin"], weight: "700" });
 
 export default function Home() {
   return (
     <div className="flex-col space-y-12">
-      <nav className="flex justify-end p-6 space-x-4">
-        <button className="text-sm hover:bg-dark-purple bg-roxo px-4 py-2 rounded-full font-bold drop-shadow-md">Home</button>
-        <button className="text-sm hover:bg-dark-purple bg-roxo px-4 py-2 rounded-full font-bold drop-shadow-md">Fazer login</button>
+      <nav className="flex justify-end space-x-4">
+        <Link href={"/dashboard"}>
+          <button className="text-sm hover:bg-dark-purple bg-roxo px-4 py-2 rounded-full font-bold drop-shadow-md">Home</button>
+        </Link>
+        <Link href={"/login"}>
+          <button className="text-sm hover:bg-dark-purple bg-roxo px-4 py-2 rounded-full font-bold drop-shadow-md">Fazer login</button>
+        </Link>
       </nav>
 
       <header className="animate-fade-in flex flex-col justify-center items-center p-6 md-2:flex-row md-2:space-x-16">
